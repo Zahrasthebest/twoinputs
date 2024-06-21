@@ -31,11 +31,12 @@ struct ContentView: View {
                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 2)
             
             Button("Submit Names") {
-                textTitle = "Your duo name is \(name1 + name2)!"
+                textTitle = ("Your duo name is, \(name1 + name2)!")
             }
             .font(.title2)
             .buttonStyle(.borderedProminent)
             .tint(.green)
+            Text("\(textTitle)")
         
         }
         .padding()
